@@ -1,0 +1,16 @@
+## YAML Template.
+---
+server:
+    servlet:
+        context-path: /core
+    port: 8881
+spring:
+    datasource:
+        url: jdbc:postgresql://localhost:5432/dbdev
+        username: postgres
+        password: root
+    jpa:
+        database-platform: org.hibernate.dialect.PostgreSQLDialect
+        show-sql: true
+        hibernate:
+            ddl-auto: update
